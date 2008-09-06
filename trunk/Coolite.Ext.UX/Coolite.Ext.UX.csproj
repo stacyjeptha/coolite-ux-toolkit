@@ -31,7 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Coolite.Ext.Web, Version=0.6.0.16898, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL" />
+    <Reference Include="Coolite.Ext.Web, Version=0.6.0.30086, Culture=neutral, PublicKeyToken=f58c952e9aa5b80a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>

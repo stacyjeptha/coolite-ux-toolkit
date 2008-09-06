@@ -40,28 +40,19 @@ namespace Coolite.Ext.UX
     [ToolboxBitmap(typeof(Coolite.Ext.UX.Portal), "Extensions.Portal.Portal.bmp")]
     [ToolboxData("<{0}:Portal runat=\"server\" Title=\"Portal\"><Content><ext:ColumnLayout runat=\"server\"><ext:LayoutColumn ColumnWidth=\".33\"><ux:PortalColumn runat=\"server\"StyleSpec=\"padding:10px 0 10px 10px\"><Content><ext:AnchorLayout runat=\"server\"><ext:Anchor Horizontal=\"100%\"><ux:Portlet runat=\"server\" Title=\"Portlet 1\"/></ext:Anchor><ext:Anchor Horizontal=\"100%\"><ux:Portlet runat=\"server\" Title=\"Portlet 2\"/></ext:Anchor></ext:AnchorLayout></Content></ux:PortalColumn></ext:LayoutColumn><ext:LayoutColumn ColumnWidth=\".33\"><ux:PortalColumn runat=\"server\"StyleSpec=\"padding:10px 0 10px 10px\"><Content><ext:AnchorLayout runat=\"server\"><ext:Anchor Horizontal=\"100%\"><ux:Portlet runat=\"server\" Title=\"Portlet 3\"/></ext:Anchor></ext:AnchorLayout></Content></ux:PortalColumn></ext:LayoutColumn><ext:LayoutColumn ColumnWidth=\".33\"><ux:PortalColumn runat=\"server\" StyleSpec=\"padding:10px\"><Content><ext:AnchorLayout runat=\"server\"><ext:Anchor Horizontal=\"100%\"><ux:Portlet Title=\"Portlet 4\" runat=\"server\" /></ext:Anchor></ext:AnchorLayout></Content></ux:PortalColumn></ext:LayoutColumn></ext:ColumnLayout></Content></{0}:Portal>")]
     [Description("Portlet")]
-    public class Portal : ContentPanel
-    {
-        public Portal() { }
-    }
+    public class Portal : ContentPanel { }
 
     [Xtype("portalcolumn")]
     [InstanceOf("Ext.ux.PortalColumn")]
     [ToolboxBitmap(typeof(Coolite.Ext.UX.PortalColumn), "Extensions.Portal.PortalColumn.bmp")]
     [ToolboxData("<{0}:PortalColumn runat=\"server\" StyleSpec=\"padding:10px 0 10px 10px\"><Content><ext:AnchorLayout ID=\"AnchorLayout1\" runat=\"server\"><ext:Anchor Horizontal=\"100%\"><ux:Portlet Title=\"Portlet\" runat=\"server\" /></ext:Anchor></ext:AnchorLayout></Content></{0}:PortalColumn>")]
     [Description("Portlet")]
-    public class PortalColumn : ContentPanel
-    {
-        public PortalColumn() { }
-    }
+    public class PortalColumn : ContentPanel { }
 
     [Xtype("portlet")]
     [InstanceOf("Ext.ux.Portlet")]
     [ToolboxBitmap(typeof(Coolite.Ext.UX.Portlet), "Extensions.Portal.Portlet.bmp")]
     [ToolboxData("<{0}:Portlet runat=\"server\" Title=\"Portlet\" />")]
     [Description("Portlet")]
-    public class Portlet : ContentPanel
-    {
-        public Portlet() { }
-    }
+    public class Portlet : ContentPanel { }
 }
