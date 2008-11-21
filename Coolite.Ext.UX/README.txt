@@ -1,6 +1,37 @@
 ﻿/************************************************************************/
-   PLEASE NOTE: EACH EXTENSION MAY HAVE UNIQUE LICENSING REQUIREMENTS.
+							PROJECT SETUP
 /************************************************************************/
+
+The required Coolite Toolkit .dll's are not packaged with the 
+Coolite.Ext.UX Project. These .dll's must be downloaded separately and 
+added to the /Build/ReferenceAssemblies/ folder. 
+
+The .dll's can be added as a single .dll:
+
+1. Coolite.Toolkit.dll, or
+
+The .dll;s can be added individually:
+
+1. Coolite.Ext.Web.dll
+2. Coolite.Utilities.dll
+3. Newtonsoft.Json.dll
+
+
+The Coolite Toolkit .dll's can be downloaded from the following location:
+                  http://www.coolite.com/download/
+
+
+
+/************************************************************************/
+							  LICENSING
+/************************************************************************/
+
+PLEASE NOTE: EACH EXTENSION MAY HAVE UNIQUE LICENSING REQUIREMENTS.
+
+All Coolite authored UX code within the Coolite.Ext.UX Project is released
+under MIT open-source license. See LICENSE.txt.
+
+We encourage all authors to release their UX code under the MIT license.
 
 UX extensions are contributed by the community and it is up to the
 copyright holder to determine the license they wish their code and 
