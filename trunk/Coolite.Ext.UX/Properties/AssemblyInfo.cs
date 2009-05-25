@@ -4,7 +4,7 @@ using System.Runtime.InteropServices;
 using System.Security;
 using System.Web.UI;
 
-[assembly: AssemblyVersion("0.6.0.*")]
+[assembly: AssemblyVersion("0.8.0.*")]
 [assembly: TagPrefix("Coolite.Ext.UX", "ux")]
 
 [assembly: AssemblyTitle("Coolite UX Toolkit")]
@@ -12,7 +12,7 @@ using System.Web.UI;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Coolite Inc.")]
 [assembly: AssemblyProduct("Coolite Toolkit for ASP.NET")]
-[assembly: AssemblyCopyright("Copyright © 2004-2008 Coolite Inc. or as noted")]
+[assembly: AssemblyCopyright("Copyright © 2004-2009 Coolite Inc. or as noted")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -139,7 +139,7 @@ Ext.ux.GMapPanel = Ext.extend(Ext.Panel, {
         var mark = new GMarker(point,marker);
         if (typeof listeners === 'object'){
             for (evt in listeners) {
-                GEvent.bind(mark, evt, this, listeners[evt]);
+                GEvent.bind(mark, evt, this, listeners[evt].fn || listeners[evt]);
             }
         }
         this.getMap().addOverlay(mark);
