@@ -1,5 +1,5 @@
 ﻿/******** 
-* Copyright (c) 2008 Coolite Inc.
+* Copyright (c) 2009 Coolite Inc.
 
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -19,10 +19,10 @@
 * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 * THE SOFTWARE.
 
-* @version:	    0.7.0
+* @version:	    0.8.0
 * @author:	    Coolite Inc. http://www.coolite.com/
-* @date:		2008-11-21
-* @copyright:   Copyright (c) 2006-2008, Coolite Inc, or as noted within each 
+* @date:		2008-05-25
+* @copyright:   Copyright (c) 2006-2009, Coolite Inc, or as noted within each 
 * 			    applicable file LICENSE.txt file
 * @license:	    MIT
 * @website:	    http://www.coolite.com/
@@ -34,24 +34,29 @@ using Coolite.Ext.Web;
 
 namespace Coolite.Ext.UX
 {
-    public class MarkerListeners : StateManagedItem
+    public class MarkerListeners : ComponentListeners
     {
-        [ClientConfig(JsonMode.Raw)]
-        [Category("Config Options")]
-        [DefaultValue(null)]
-        [Description("Fires when this marker is clicked.")]
-        [PersistenceMode(PersistenceMode.InnerProperty)]
+        private ComponentListener click;
+
+        /// <summary>
+        /// Fires when this marker is clicked.
+        /// </summary>
+        [ListenerArgument(0, "el", typeof(Button), "this")]
+        [ListenerArgument(1, "e", typeof(object), "The click event")]
         [TypeConverter(typeof(ExpandableObjectConverter))]
-        public virtual JFunction Click
+        [ClientConfig("click", typeof(ListenerJsonConverter))]
+        [PersistenceMode(PersistenceMode.InnerProperty)]
+        [NotifyParentProperty(true)]
+        [Description("Fires when this marker is clicked.")]
+        public virtual ComponentListener Click
         {
             get
             {
-                object obj = ViewState["Click"];
-                return (obj == null) ? null : (JFunction)obj;
-            }
-            set
-            {
-                this.ViewState["Click"] = value;
+                if (this.click == null)
+                {
+                    this.click = new ComponentListener();
+                }
+                return this.click;
             }
         }
     }
