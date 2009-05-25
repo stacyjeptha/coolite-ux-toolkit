@@ -53,7 +53,7 @@ namespace Coolite.Ext.UX
         }
 
         [Browsable(false)]
-        public override void UpdateContent(string text)
+        public override void UpdateBody(string text)
         {
             //base.UpdateContent(text);
         }
